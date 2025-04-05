@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Student ID Card</h2>
+        
+        <div class="container">
+            <div class="card">
+                <img src="" alt="Student Photo" class="img">
+                <div class="container-2">
+                    <h4 id="IDnNme"><b>John Doe</b></h4> 
+                    <p id="num"><span><b>ID Number&nbsp;</b></span>1212</p>
+                    <p id="art">Architect & Engineer</p>
+                    <p id="courseDisplay">Computer Science</p>
+                    <p id="collegeDisplay">Tech University</p>
+                </div>
+            </div>
+        </div>
+        <form id="cardForm" class="form">
+        <p class="error"></p>
+            <input type="text" placeholder="Enter Your Full Name" id="fullname" required>
+           
+            <input type="tel" placeholder="ID Number" id="idNum" required> 
+          
+            <input type="text" placeholder="Role/Position" id="role" required>
+           
+            <input type="text" placeholder="Course/Major" id="course" required>
+
+            <input type="text" placeholder="College Name" id="college" required>
+
+            <input type="file">
+            <input type="submit" id="submit" value="Generate Card">
+        </form>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
